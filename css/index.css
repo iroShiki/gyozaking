@@ -225,7 +225,7 @@ a{
     width: 48%;
 }
 .restaurant-title{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 24px;
     font-weight: 700;
 }
@@ -260,3 +260,10 @@ a{
       opacity: 1;
       visibility: visible;
     }
+.map-link{
+    font-size: 18px;
+    border-radius: 50px;
+    border: solid 2px black;
+    padding: 5px 10px;
+    display: inline-block;
+}
