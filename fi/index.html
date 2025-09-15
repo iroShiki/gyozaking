@@ -9,18 +9,20 @@
     <link rel="icon" href="../img/gyozaking_logo_w.png" type="image/x-icon">
   </head>
   <body class="full-width">
-    <div class="header full-width">
+    <div class="header full-width" id="header">
         <div class="header-content full-height">
-            <a href="#" class="header-upper full-width">
+            <div href="#" class="header-upper full-width" id="header-upper">
                 <img src="../img/gyozaking_logo.png" alt="" class="header-logo" id="header-logo">
-            </a>
-            <div class="nav full-width">
+                <a href="../en/index.html" class="language-tag" id="top-langauge-tag">English</a>
+            </div>
+            <div class="nav full-width" id="nav">
                 <div class="nav-tag-list">
+                    <img src="../img/gyozaking_logo.png" alt="" class="nav-logo box" id="nav-logo">
                     <a href="#about" class="nav-tag">Gyoza Kingistä</a>
                     <a href="#menu" class="nav-tag">Valikko</a>
                     <a href="#" class="nav-tag">Yhteystiedot</a>
-                    <a href="../en/index.html" class="nav-tag">English</a>
                     <a href="#visit" class="nav-button-tag">Käy ravintolassamme</a>
+                    <a href="../en/index.html" class="language-tag box" id="nav-langauge-tag">English</a>
                 </div>
             </div>
         </div>
@@ -98,6 +100,22 @@
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
   </body>
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY; // number of pixels scrolled vertically
+      if(scrolled > 80){
+        document.getElementById("header").style.position = "fixed";
+        document.getElementById("header-upper").style.display = "none";
+        document.getElementById("nav-logo").classList.add("show");
+        document.getElementById("nav-langauge-tag").classList.add("show");
+      }
+      else{
+        document.getElementById("header").style.position = "static";
+        document.getElementById("header-upper").style.display = "grid";
+        document.getElementById("nav-logo").classList.remove("show");
+        document.getElementById("nav-langauge-tag").classList.remove("show");
+      }
+    });
+  </script>
 </html>
