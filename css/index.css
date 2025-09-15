@@ -260,10 +260,9 @@ a{
 .box {
       opacity: 0;
       visibility: hidden;
-      transition: opacity 500ms ease, visibility 500ms ease;
-      -webkit-transition: background-color 200ms linear, color 200ms linear;
-        -ms-transition: background-color 200ms linear, color 200ms linear;
-        transition: background-color 200ms linear, color 200ms linear;
+      -webkit-transition: background-color 200ms linear, color 200ms linear,opacity 500ms ease, visibility 500ms ease;
+        -ms-transition: background-color 200ms linear, color 200ms linear,opacity 500ms ease, visibility 500ms ease;
+        transition: background-color 200ms linear, color 200ms linear,opacity 500ms ease, visibility 500ms ease;
     }
 
 .box.show {
