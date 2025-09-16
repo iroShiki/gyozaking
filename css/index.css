@@ -8,6 +8,9 @@ body {
 html{
     scroll-behavior: smooth;
 }
+.mobile-nav-container{
+    display: none;
+}
 .header{
     display: flex;
     justify-content: center;
@@ -213,11 +216,11 @@ a{
     border-left: solid 5px rgb(192, 163, 84);
 
 }
-.restaurant-container{
+.restaurant-content{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    height: 300px;
+    height: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     border: solid 2px rgb(192, 163, 84);
